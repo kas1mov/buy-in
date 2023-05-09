@@ -1,0 +1,57 @@
+.sportKross {
+  &__path {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #767676;
+    margin: 30px 0;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 13px;
+    &__text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 39px;
+      color: #3C3C3C;
+    }
+    &__tovarNum {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $opacityColor;
+    }
+  }
+  &__brends {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__brend {
+    background: $brendBackground;
+    border-radius: 5px;
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px; 
+      color: $blackColor;
+      padding: 6px 19px;
+    }
+  }
+}
+.span {
+  &__text {
+    color: #3c3c3c;
+  }
+}
+.sport{
+  &__main{
+    margin-top: 30px;
+  }
+}

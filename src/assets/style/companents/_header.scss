@@ -1,0 +1,186 @@
+.Header {
+  &__top {
+    background: $background;
+    padding: 9px 0;
+    &__installment {
+      background: $whiteColor;
+      border-radius: 10px;
+      width: 169px;
+      height: 30px;
+      text-align: center;
+      padding: 3px 0;
+      font-style: normal;
+      font-weight: 400;
+      @include adaptive-value(font-size, 16, 14, 1);
+      @include adaptive-value(line-height, 24, 22, 1);
+      color: $blackColor;
+    }
+    &__map {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &_location {
+        display: flex;
+        align-items: center;
+        &__text {
+          font-style: normal;
+          font-weight: 400;
+          @include adaptive-value(font-size, 16, 14, 1);
+          @include adaptive-value(line-height, 24, 22, 1);
+          color: $whiteColor;
+        }
+      }
+      &_text {
+        font-style: normal;
+        font-weight: 400;
+        @include adaptive-value(font-size, 16, 14, 1);
+        @include adaptive-value(line-height, 24, 22, 1);
+        color: $whiteColor;
+      }
+    }
+    &__questions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &_text {
+        font-style: normal;
+        font-weight: 400;
+        @include adaptive-value(font-size, 16, 14, 1);
+        @include adaptive-value(line-height, 24, 22, 1);
+        text-decoration-line: underline;
+        color: $whiteColor;
+      }
+      &_btn {
+        background: $whiteColor;
+        border-radius: 10px;
+        width: 169px;
+        height: 30px;
+        font-style: normal;
+        font-weight: 400;
+        @include adaptive-value(font-size, 16, 14, 1);
+        @include adaptive-value(line-height, 24, 22, 1);
+        text-align: center;
+        color: $blackColor;
+      }
+    }
+  }
+  &__container {
+    max-width: 1380px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__bottom {
+    background: $whiteColor;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 17px 0;
+    &__btns {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    &__logo {
+      margin-right: 56px;
+    }
+    &__menu {
+      background: $btnBackground;
+      border-radius: 0px 20px 0px 0px;
+      width: 160px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding-left: 19px;
+      font-style: normal;
+      font-weight: 400;
+      @include adaptive-value(font-size, 16, 14, 1);
+      @include adaptive-value(line-height, 24, 22, 1);
+      color: $whiteColor;
+    }
+    &__menu:hover {
+      background: $background !important;
+    }
+    &__search {
+      border: 1px solid #1f2b57;
+      border-radius: 10px;
+      background: $whiteColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &_btn {
+        background: $btnBackground;
+        border-radius: 10px;
+        width: 62px;
+        height: 36px;
+        border: none;
+      }
+      &_input {
+        width: 394px;
+        height: 24px;
+        margin: 6px 0;
+        padding-left: 26px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #bebebe;
+        opacity: 0.8;
+        outline: none;
+      }
+    }
+    &__search:hover {
+      border: 1.5px solid #1f2b57;
+    }
+    &__baskets {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+      margin-left: 12px;
+    }
+    &__order {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &__favorites {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &__basket {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &__registration {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-left: 3px;
+      background: $btnBackground;
+      color: $whiteColor;
+      border-radius: 5px;
+      width: 138px;
+      height: 36px;
+      font-style: normal;
+      font-weight: 400;
+      @include adaptive-value(font-size, 14, 12, 1);
+      @include adaptive-value(line-height, 21, 18, 1);
+    }
+  }
+}
+
+.ant-select-selection-search {
+  background: inherit;
+  width: 50px;
+}
+.ant-select-selector {
+  background: inherit;
+  width: 50px;
+}
+.ant-select.css-dev-only-do-not-override-1mqg3i0.ant-select-single.ant-select-show-arrow {
+  background: inherit;
+  width: 50px;
+}

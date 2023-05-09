@@ -1,0 +1,56 @@
+.filter {
+  width: 208px;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: $blackColor;
+    }
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      // display: inline-block;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: $blackColor;
+    }
+  }
+  &__brend {
+    margin-top: 15px;
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 8px;
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+  &__all {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: $blackColor;
+  }
+}

@@ -1,0 +1,117 @@
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.card {
+  position: relative;
+  background: $whiteColor;
+  box-shadow: 0px 4px 10px rgba(73, 118, 232, 0.1);
+  border-radius: 10px;
+  width: 218px;
+  &__data {
+    padding: 0 14px;
+  }
+  &__hot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background: #fe26ce;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 2px 14px;
+    color: $whiteColor;
+  }
+  &__img {
+    padding-left: 31px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: $textColor;
+    margin: 10px 0;
+  }
+  &__starIcon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 7px;
+    &_num {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 15px;
+      color: $blackColor;
+    }
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $blackColor;
+  }
+  &__month {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+    &__sum {
+      padding: 2px 0;
+      padding-left: 10px;
+      padding-right: 24px;
+      background: $btnBackground;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      color: $whiteColor;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $blackColor;
+    }
+  }
+  &__sum {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $blackColor;
+    margin-bottom: 19px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: auto;
+    padding: 4px 35px;
+    background: $whiteColor;
+    box-shadow: 0px 4px 10px rgba(73, 118, 232, 0.1);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $blackColor;
+  }
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: .3s;
+}

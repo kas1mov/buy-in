@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    row-gap: 10px;
+    padding: 0 50px;
+  }
+  &__item:hover {
+    background: $background;
+    h1 {
+      color: $whiteColor;
+    }
+    fill:$whiteColor;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $blackColor;
+  }
+}
+.ant-drawer-body{
+  padding: 0 !important;
+  padding-top: 30px !important;
+}

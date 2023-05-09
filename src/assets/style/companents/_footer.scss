@@ -1,0 +1,80 @@
+.footer {
+  background: $background;
+  &__container {
+    width: 100%;
+    max-width: 959px;
+    margin: auto;
+  }
+  &__top {
+    display: flex;
+    gap: 85px;
+    padding-top: 70px;
+    margin-bottom: 103px;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: $whiteColor;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $footerText;
+    }
+    &_one {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &_two {
+      display: flex;
+      flex-direction: column;
+      gap: 41px;
+    }
+    &_three {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__bottom {
+    padding-bottom: 53px;
+    &_text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: $footerText;
+    }
+  }
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: $whiteColor;
+    }
+  }
+  &__btn {
+    width: 139px;
+    height: 40.16px;
+    border: none;
+    &_img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

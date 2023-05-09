@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500&family=Sofia+Sans&display=swap");
+
+.Advertising {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7px;
+  margin-top: 64px;
+  margin-bottom: 66.1px;
+  &__div {
+    position: relative;
+    z-index: 1;
+  }
+  &__text {
+    position: absolute;
+    width: 159px;
+    height: 220px;
+    left: 66px;
+    top: 128px;
+    z-index: 2;
+    font-family: "Sofia Sans",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    @include adaptive-value(font-size,46,43,1);
+    @include adaptive-value(line-height,55,52,1);
+    text-align: center;
+    color: #e53e5c;
+  }
+  &__imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    &__top {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    &__bottom {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+  }
+}

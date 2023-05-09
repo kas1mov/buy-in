@@ -1,0 +1,66 @@
+.Home {
+  &__product {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    overflow: hidden;
+    &__card {
+      width: 433px;
+      height: 171px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid $btnBackground;
+    }
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      @include adaptive-value(font-size, 24, 22, 1);
+      @include adaptive-value(line-height, 36, 34, 1);
+      color: $textColor;
+    }
+    // &__text {
+    //   margin-left: 25px;
+    // }
+    &_text {
+      font-style: normal;
+      font-weight: 400;
+      @include adaptive-value(font-size, 16, 14, 1);
+      @include adaptive-value(line-height, 24, 22, 1);
+      color: $blackColor;
+    }
+    &__name {
+      font-style: normal;
+      font-weight: 600;
+      @include adaptive-value(font-size, 26, 24, 1);
+      @include adaptive-value(line-height, 39, 37, 1);
+      color: $whiteColor;
+      background: $background;
+      border-radius: 0px 30px 0px 0px;
+      padding: 8px 0;
+      width: 247px;
+      padding-left: 50px;
+      margin-bottom: 30px;
+    }
+    &__img {
+      position: relative;
+      z-index: 3;
+    }
+  }
+  &__skidka {
+    margin-bottom: 30px;
+  }
+  &__Brend {
+    margin-bottom: 60px;
+  }
+  &__advertising__imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 188px;
+  }
+}
+
