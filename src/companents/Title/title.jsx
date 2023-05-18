@@ -1,17 +1,21 @@
 import { Breadcrumb } from "antd";
-const Title = () => (
-  <Breadcrumb
-    items={[
-      {
-        title: <a href="/">Главная</a>,
-      },
-      {
-        title: <a href="/spotr">Спорт</a>,
-      },
-      {
-        title: "Спортивные кроссовки",
-      },
-    ]}
-  />
-);
-export default Title;
+import useLanguage from "../../hook/useLanguage";
+
+export const Title = () => {
+  const translate = useLanguage();
+  return (
+    <Breadcrumb
+      items={[
+        {
+          title: <a href="/">{translate("Glavniy")}</a>,
+        },
+        {
+          title: <a href="/spotr">{translate("sport")}</a>,
+        },
+        {
+          title: <p>{translate("sportCross")}</p>,
+        },
+      ]}
+    />
+  );
+};

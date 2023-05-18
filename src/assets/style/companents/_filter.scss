@@ -52,5 +52,56 @@
     line-height: 18px;
     text-decoration-line: underline;
     color: $blackColor;
+    width: 78px;
+  }
+  &__istory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    &__div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &__item {
+      background: $background;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      padding: 5px 12px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $whiteColor;
+    }
+    &__btn {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration-line: underline;
+      color: $blackColor;
+    }
+  }
+  &__select {
+    background: $whiteColor;
+    border: 1px solid #27376f;
+    border-radius: 5px;
+    width: 139px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $blackColor;
+  }
+  &__color__div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }

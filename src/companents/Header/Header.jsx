@@ -13,8 +13,10 @@ import BuyInLogo from "../../assets/image/BuyIn.png";
 import { Button } from "antd";
 import { useState } from "react";
 import { AppDrawer } from "../Drawer/drawer";
+import useLanguage from "../../hook/useLanguage";
 
 export const Header = () => {
+  const translate = useLanguage();
   const [open, setOpen] = useState(false);
   const [placemen, setPlacement] = useState("left");
   const showDrawer = () => {
@@ -31,22 +33,24 @@ export const Header = () => {
       <div className="Header__top">
         <div className="Header__container">
           <div className="Header__top__map">
-            <div className="Header__top__installment">0% Рассрочка</div>
-            <p className="Header__top__map_text">Пункт выдачи</p>
+            <div className="Header__top__installment">
+              0% {translate("tolov")}
+            </div>
+            <p className="Header__top__map_text">{translate("muammo")}</p>
             <NavLink
               to={"https://goo.gl/maps/Fv1s4aejfYPAao998"}
               className="Header__top__map_location"
             >
               <LocationIcon />
-              <p className="Header__top__map_location__text">г.Ургенч</p>
+              <p className="Header__top__map_location__text">{translate("urgench")}</p>
             </NavLink>
           </div>
           <div className="Header__top__questions">
             <NavLink to={"/questions"} className="Header__top__questions_text">
-              Часто задаваемые вопросы
+             {translate("savollar")}
             </NavLink>
             <button className="Header__top__questions_btn">
-              Заказать звонок
+              {translate("qongiroq")}
             </button>
             <div className="Header__top_language">
               <HeaderLanguage />
@@ -66,13 +70,13 @@ export const Header = () => {
               className="Header__bottom__menu"
             >
               <MenuIcon />
-              <p>Категории</p>
+              <p>{translate("katalog")}</p>
             </Button>
             <AppDrawer open={open} onClose={onClose} />
             <div className="Header__bottom__search">
               <input
                 type="text"
-                placeholder="Введите запрос..."
+                placeholder={translate("qidiruv")}
                 className="Header__bottom__search_input"
               />
               <button className="Header__bottom__search_btn">
@@ -83,19 +87,19 @@ export const Header = () => {
           <div className="Header__bottom__baskets">
             <NavLink to={"/order"} className="Header__bottom__order">
               <OrderIcon />
-              <p>Мои заказы</p>
+              <p>{translate("zakaz")}</p>
             </NavLink>
             <NavLink to={"/favorites"} className="Header__bottom__favorites">
               <FavoritesIcon />
-              <p>Избранное</p>
+              <p>{translate("sevimlilar")}</p>
             </NavLink>
             <NavLink to={"/basket"} className="Header__bottom__basket">
               <BasketIcon />
-              <p>Корзина</p>
+              <p>{translate("savat")}</p>
             </NavLink>
             <button className="Header__bottom__registration">
               <RegistrationIcon />
-              <p>Регистрация</p>
+              <p>{translate("reg")}</p>
             </button>
           </div>
         </div>

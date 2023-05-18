@@ -1,4 +1,4 @@
-import AppleImg from "../assets/image/apple.png";
+import AppleImg from "../assets/image/appleTel.png";
 import TelevizorImg from "../assets/image/televizor2.png";
 import MashinImg from "../assets/image/mashin.png";
 import Televizor from "../assets/image/televizor.png";
@@ -8,6 +8,10 @@ import Apple from "../assets/image/Apple.png";
 import Xiaomi from "../assets/image/Xiaomi.png";
 import Huawei from "../assets/image/Huawei.png";
 import Honor from "../assets/image/Honor.png";
+import CrossImg from "../assets/image/cross.png";
+import CrossImg2 from "../assets/image/cross2.png";
+import CrossImg3 from "../assets/image/cross3.png";
+import CrossImg4 from "../assets/image/cross4.png";
 import {
   CuisineIcon,
   ElektronIcon,
@@ -63,28 +67,28 @@ export const dataMenu = [
   {
     id: 1,
     icon: <MenIcon />,
-    title: "Главная",
+    title: "Glavniy",
     path: "/",
     page: <Home />,
   },
   {
     id: 2,
     icon: <MenIcon />,
-    title: "Мужчинам",
+    title: "erkak",
     path: "/men",
     page: <Men />,
   },
   {
     id: 3,
     icon: <GirlIcon />,
-    title: "Женщинам",
+    title: "ayol",
     path: "/girls",
     page: <Home />,
   },
   {
     id: 4,
     icon: <SportIcon />,
-    title: "Спорт",
+    title: "sport",
     path: "/spotr",
     page: <Sport />,
   },
@@ -92,49 +96,49 @@ export const dataMenu = [
   {
     id: 5,
     icon: <GameIcon />,
-    title: "Игры и развлечения",
+    title: "oyin",
     path: "/games",
     page: <Home />,
   },
   {
     id: 6,
     icon: <ElektronIcon />,
-    title: "Электроника",
+    title: "elektr",
     path: "/electronic",
     page: <Home />,
   },
   {
     id: 7,
     icon: <CuisineIcon />,
-    title: "Для кухни",
+    title: "oshxona",
     path: "/cuisine",
     page: <Home />,
   },
   {
     id: 8,
     icon: <MenIcon />,
-    title: "Главная",
+    title: "Glavniy",
     path: "/",
     page: <Home />,
   },
   {
     id: 9,
     icon: <MenIcon />,
-    title: "Мужчинам",
+    title: "erkak",
     path: "/men",
     page: <Men />,
   },
   {
     id: 10,
     icon: <GirlIcon />,
-    title: "Женщинам",
+    title: "ayol",
     path: "/girls",
     page: <Home />,
   },
   {
     id: 11,
     icon: <SportIcon />,
-    title: "Спорт",
+    title: "sport",
     path: "/spotr",
     page: <Sport />,
   },
@@ -142,21 +146,21 @@ export const dataMenu = [
   {
     id: 12,
     icon: <GameIcon />,
-    title: "Игры и развлечения",
+    title: "oyin",
     path: "/games",
     page: <Home />,
   },
   {
     id: 13,
     icon: <ElektronIcon />,
-    title: "Электроника",
+    title: "elektr",
     path: "/electronic",
     page: <Home />,
   },
   {
     id: 14,
     icon: <CuisineIcon />,
-    title: "Для кухни",
+    title: "oshxona",
     path: "/cuisine",
     page: <Home />,
   },
@@ -452,5 +456,211 @@ export const dataBrendName = [
     id: 5,
     name: "Jordan",
     size: "34",
+  },
+];
+
+export const dataKrossCards = [
+  {
+    id: 1,
+    img: CrossImg,
+    title: "Yeezy Boost 350 V2 “Clay”Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 2,
+    img: CrossImg2,
+    title: "New Balance Fresh Foam Links SL - White Green",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 3,
+    img: CrossImg3,
+    title: "Nike Air Max Bolt Men’s Shoe",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 4,
+    img: CrossImg4,
+    title: "FILA Disruptor Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 5,
+    img: CrossImg,
+    title: "Yeezy Boost 350 V2 “Clay”Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 6,
+    img: CrossImg2,
+    title: "New Balance Fresh Foam Links SL - White Green",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 7,
+    img: CrossImg3,
+    title: "Nike Air Max Bolt Men’s Shoe",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 8,
+    img: CrossImg4,
+    title: "FILA Disruptor Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 9,
+    img: CrossImg,
+    title: "Yeezy Boost 350 V2 “Clay”Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 10,
+    img: CrossImg2,
+    title: "New Balance Fresh Foam Links SL - White Green",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 11,
+    img: CrossImg3,
+    title: "Nike Air Max Bolt Men’s Shoe",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 12,
+    img: CrossImg4,
+    title: "FILA Disruptor Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 13,
+    img: CrossImg,
+    title: "Yeezy Boost 350 V2 “Clay”Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 14,
+    img: CrossImg2,
+    title: "New Balance Fresh Foam Links SL - White Green",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 15,
+    img: CrossImg3,
+    title: "Nike Air Max Bolt Men’s Shoe",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 16,
+    img: CrossImg4,
+    title: "FILA Disruptor Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 17,
+    img: CrossImg,
+    title: "Yeezy Boost 350 V2 “Clay”Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 18,
+    img: CrossImg2,
+    title: "New Balance Fresh Foam Links SL - White Green",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 19,
+    img: CrossImg3,
+    title: "Nike Air Max Bolt Men’s Shoe",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+  {
+    id: 20,
+    img: CrossImg4,
+    title: "FILA Disruptor Orange",
+    iconNum: 4,
+    summa: "15 999 000 сум",
+    month: "1 567 000 сум ",
+  },
+];
+
+export const dataColor = [
+  {
+    id: 1,
+    color: "#FF2D2D",
+  },
+  {
+    id: 2,
+    color: "#3C2BFE",
+  },
+  {
+    id: 3,
+    color: "#000000",
+  },
+  {
+    id: 4,
+    color: "#FF7A00",
+  },
+  {
+    id: 5,
+    color: "#0500FF",
+  },
+  {
+    id: 6,
+    color: "#6A197E",
+  },
+  {
+    id: 7,
+    color: "#385F19",
+  },
+  {
+    id: 8,
+    color: "#00FFD1",
+  },
+  {
+    id: 9,
+    color: " #86DD42",
+  },
+  {
+    id: 10,
+    color: "#F425E0",
   },
 ];
